@@ -1,0 +1,102 @@
+$BlocBasBorder-color: rgb(255, 166, 0);
+$BlocHautBorder-color: rgb(255, 0, 0);
+$BlocGaucheBorder-color: rgb(64, 224, 208);
+$BlocDroitBorder-color: rgb(64, 123, 200);
+
+@media screen and (max-width: 2000) {
+    
+.ContainerFlexHead {
+    display: flex;
+    display: inline;
+    text-align: center;
+    flex: 1;
+    padding: 100px;
+    
+}
+
+.ContainerFlexMain {
+    display: flex;
+    flex: 1;
+    padding: 500px;
+}
+
+body {
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+p {
+    color: #969696;
+    font-size: 15px;
+}  
+.PMain {
+    color: #969696;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 40px;
+    color: #3d3d3d;
+}
+
+h2 {
+    color: #3d3d3d;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #5e5e5e;
+    font-family: Arial;
+    margin-bottom: -30px;
+}
+
+.BlocGauche {
+    position: absolute;
+    top: 470px;
+    left: 328px;
+    border-top: 4px solid $BlocGaucheBorder-color;
+    border-radius: 6px;
+    width: 380px;
+    height: 250px;
+    box-shadow: -8px 15px 12px #dee4e8, 8px 15px 12px #dee4e8;
+}
+
+
+.BlocHaut {
+    top: 330px;
+    left: 752px;
+    border-top: 4px solid $BlocHautBorder-color;
+    @extend .BlocGauche
+}
+
+
+.BlocBas {
+    top: 620px;
+    left: 752px;
+    border-top: 4px solid $BlocBasBorder-color;
+    @extend .BlocGauche
+}
+
+.BlocDroit {
+    top: 470px;
+    left: 1175px;
+    border-top: 4px solid $BlocDroitBorder-color;
+    @extend .BlocGauche
+}
+
+img {
+    position: absolute;
+    left: 280px;
+    top: 160px;
+}
+
+}
+
+
+    
+  
